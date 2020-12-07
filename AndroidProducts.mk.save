@@ -14,9 +14,8 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/yaap_sanders.mk
+	$(LOCAL_DIR)/revengeos_sanders.mk
 
-COMMON_LUNCH_CHOICES := \
-	yaap_sanders-userdebug \
+COMMON_LUNCH_CHOICES := \_sanders-userdebug \
 #        bliss_sanders-user \
 #        bliss_sanders-eng

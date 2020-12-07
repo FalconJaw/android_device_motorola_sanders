@@ -46,6 +46,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_USES_64_BIT_BINDER := true
 
+# Ignore rom sepolicy
+#TARGET_EXCLUDE_QCOM_VENDOR_SEPOLICY := true
+
 # Asserts
 TARGET_OTA_ASSERT_DEVICE := sanders,sanders_retail
 
@@ -72,9 +75,9 @@ TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := sanders_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
 TARGET_KERNEL_CLANG_COMPILE := true
-TARGET_KERNEL_CLANG_CUSTOM := true
-TARGET_KERNEL_CLANG_VERSION := r377782d
-TARGET_USE_SDCLANG := true
+#TARGET_KERNEL_CLANG_CUSTOM := true
+#TARGET_KERNEL_CLANG_VERSION := r377782d
+#TARGET_USE_SDCLANG := true
 
 #Build
 BUILD_BROKEN_DUP_RULES := true
@@ -236,7 +239,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 VENDOR_SECURITY_PATCH := 2018-11-5
 
 # SELinux
-include device/qcom/sepolicy-legacy-um/SEPolicy.mk
+include device/qcom/sepolicy-legacy-um/sepolicy.mk
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
