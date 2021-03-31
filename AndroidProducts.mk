@@ -14,9 +14,7 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/revengeos_sanders.mk
+	$(LOCAL_DIR)/ssos_sanders.mk
 
 COMMON_LUNCH_CHOICES := \
-	revengeos_sanders-userdebug \
-#        bliss_sanders-user \
-#        bliss_sanders-eng
+	ssos_sanders-eng

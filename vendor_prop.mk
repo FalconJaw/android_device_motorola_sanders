@@ -342,3 +342,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GPS
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.location.osnlp.region.package=com.google.android.gms
+
+# lmkd
+ro.config.low_ram=true
